@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Esto lo que hace es hacer que en tu html se use border-box y los elementos hereden este valor
+    pero puedan cambiar si fuese necesario por otro valor (aunque es poco probable que lo uses
+    quién sabe si cargas algún componente de tercero que sí). */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+/*Creamos variables en CSS*/
+
+:root {
+    --fuente-titulo: "Krona One", sans-serif;
+    --fuente-texto: "Montserrat", sans-serif;
+}
+
+  /* Vamos a relizar cambios universales, es decir, en todos los elementos de nuestro archivo htlm.
+    Para ello, utilizamos el asterisco (*).
+    También podríamos utilizar un archivo reset.css, pero este es un pequeño proyecto  */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    background-color: #000000;
+    color: #f6f6f6;
+    /*height: 100vh;*/
+}
+
+.header {
+    padding-top: 4%;
+    padding-right: 0%;
+    padding-bottom: 0%;
+    padding-left: 12%;
+}
+
+
+.header_menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header_menu_links {
+    color: gray;
+    /*margin: 10% 15%;*/
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: var(--fuente-texto);
+    font-weight: 600;
+
+}
+
+.header_menu_links:hover {
+    color: #007bff;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    padding: 6% 12%;
+    justify-content: space-between;
+    gap: 80px;    
+}
+
+.cv_presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6% 6%;
+    justify-content: space-between;
+    gap: 80px; 
+}
+
+.presentacion_contenido{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+.presentacion_contenido_titulo{
+    font-size: 2.25rem;
+    font-family: var(--fuente-titulo);
+    
+}
+
+.presentacion_contenido_subtitulo {
+    font-size: 1.75rem;
+    font-family: var(--fuente-titulo);
+}
+
+.titulo-destacado {
+    color: #22d4fd;
+    border: 1px solid #22d4fd;
+    padding: 5px;
+}
+
+.presentacion_contenido_parrafo{
+    font-size: 1.5rem;
+    font-family: var(--fuente-texto);
+    
+}
+
+.presentacion_contenido_listas {
+    font-size: 1.5rem;
+    font-family: var(--fuente-texto);
+}
+
+.presentacion_enlaces {
+    display: flex;
+    justify-content: space-between;
+    /*padding: 10px 20px;*/
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+}
+
+.presentacion_enlaces_subtitulo {
+    font-size: 1.5rem;
+    font-family: var(--fuente-titulo);
+    font-weight: 400;
+}
+
+.presentacion_enlaces_link {
+    
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    color: #f6f6f6;
+    border: 2px solid #22d4fd;
+    width: 50%;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: var(--fuente-texto);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.presentacion_enlaces_link:hover {
+        background-color: #272727;   
+}
+
+
+.presentacion_imagen {
+    width: 50%;
+}
+
+.pie_de_pagina {
+    background-color: #22d4fd;
+    color: #000000;
+    /*height: 80px;*/
+    padding: 24px 0;
+    font-size: 1.5rem;
+    font-family: var(--fuente-texto);
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+}
+
+
+@media all and (max-width: 1200px) {
+    .header {
+        padding: 6%;
+    }
+
+    .header_menu {
+        justify-content: center;
+    }
+
+    .presentacion {
+        flex-direction: column-reverse;
+    }
+
+    .presentacion_contenido {
+        width: auto;
+    }
+
+ 
+    }
