@@ -141,6 +141,7 @@ body{
     border: 2px solid #22d4fd;
     width: 50%;
     text-align: center;
+    align-items: center;
     padding: 21.5px 0;
     border-radius: 8px;
     font-family: var(--fuente-texto);
@@ -198,11 +199,12 @@ body{
     }
 
     .header_menu {
-        justify-content: center;
+        justify-content: center safe;
     }
 
     .header_menu_links {
         font-size: 1.25rem;
+        justify-content: space-evenly safe;
     }
 
     .presentacion {
