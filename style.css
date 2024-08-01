@@ -190,3 +190,36 @@ body{
 
  
     }
+
+@media all and (max-width: 600px) {
+    .header {
+        padding: 6%;
+        width: auto;
+    }
+
+    .header_menu {
+        justify-content: center;
+    }
+
+    .header_menu_links {
+        font-size: 1.25rem;
+    }
+
+    .presentacion {
+        flex-direction: column-reverse;
+    }
+
+    .presentacion_contenido {
+        width: auto;
+    }
+
+    .presentacion_enlaces_link {
+        font-size: 1.25rem;
+    }
+
+    .pie_de_pagina {
+        font-size: 1.25rem;
+        width: auto;
+    }
+
+    }
