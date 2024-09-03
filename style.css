@@ -38,14 +38,10 @@ body{
     background-color: var(--color-fondo);
     color: var(--color-texto);
     font-family: var(--fuente-texto);
-    /*height: 100vh;*/
 }
 
 .header {
-    padding-top: 4%;
-    padding-right: 0%;
-    padding-bottom: 0%;
-    padding-left: 12%;
+    padding: 4% 12% 0 12%;
 }
 
 
@@ -57,11 +53,9 @@ body{
 
 .header_menu_links {
     color: gray;
-    /*margin: 10% 15%;*/
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 600;
-
 }
 
 .header_menu_links:hover {
@@ -73,7 +67,8 @@ body{
     align-items: center;
     padding: 6% 12%;
     justify-content: space-between;
-    gap: 80px;    
+    gap: 80px;
+    flex-direction: column-reverse;
 }
 
 .cv_presentacion {
@@ -86,17 +81,15 @@ body{
 }
 
 .presentacion_contenido{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    
 }
 
 .presentacion_contenido_titulo{
     font-size: 2.25rem;
     font-family: var(--fuente-titulo);
-    
 }
 
 .presentacion_contenido_subtitulo {
@@ -120,8 +113,6 @@ body{
 
 .presentacion_enlaces {
     display: flex;
-    justify-content: space-between;
-    /*padding: 10px 20px;*/
     flex-direction: column;
     align-items: center;
     gap: 32px;
@@ -138,12 +129,12 @@ body{
     
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 16px;
     color: var(--color-texto);
     border: 2px solid var(--color-principal);
-    width: 50%;
-    text-align: center;
-    align-items: center;
+    width: 100%;
+    text-align: center;  
     padding: 21.5px 0;
     border-radius: 8px;
     font-size: 1.5rem;
@@ -157,13 +148,13 @@ body{
 
 
 .presentacion_imagen {
-    width: 50%;
+    width: 100%;
+    max-width: 600px;
 }
 
 .pie_de_pagina {
     background-color: var(--color-principal);
     color: var(--color-fondo);
-    /*height: 80px;*/
     padding: 24px 0;
     font-size: 1.5rem;
     font-weight: 400;
