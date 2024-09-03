@@ -181,6 +181,10 @@ body{
         font-size: 2rem;
     }
 
+    .presentacion_contenido_subtitulo {
+        font-size: 1.5rem;
+    }
+
     .presentacion_contenido_parrafo {
         font-size: 1.25rem;
     }
