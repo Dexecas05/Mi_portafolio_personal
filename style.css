@@ -23,9 +23,7 @@ html {
     --color-destacado: #007bff;
 }
 
-  /* Vamos a relizar cambios universales, es decir, en todos los elementos de nuestro archivo htlm.
-    Para ello, utilizamos el asterisco (*).
-    También podríamos utilizar un archivo reset.css, pero este es un pequeño proyecto  */
+  /* Reset */
 
 * {
     margin: 0;
@@ -75,13 +73,13 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 6% 6%;
+    padding: 6% 12%;
     justify-content: space-between;
     gap: 80px; 
 }
 
 .presentacion_contenido{
-    width: 100%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -100,7 +98,7 @@ body{
 .titulo-destacado {
     color: var(--color-principal);
     border-bottom: 1px solid var(--color-principal);
-    padding-bottom: 2px;
+    padding: 5px;
 }
 
 .presentacion_contenido_parrafo{
@@ -109,6 +107,8 @@ body{
 
 .presentacion_contenido_listas {
     font-size: 1.5rem;
+    margin-bottom: 3px;
+    list-style: disc;
 }
 
 .presentacion_enlaces {
@@ -133,7 +133,7 @@ body{
     gap: 16px;
     color: var(--color-texto);
     border: 2px solid var(--color-principal);
-    width: 100%;
+    width: 75%;
     text-align: center;  
     padding: 21.5px 0;
     border-radius: 8px;
@@ -148,7 +148,7 @@ body{
 
 
 .presentacion_imagen {
-    width: 100%;
+    width: 50%;
     max-width: 600px;
 }
 
